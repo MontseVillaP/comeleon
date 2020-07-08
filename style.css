@@ -1,0 +1,328 @@
+:root{
+    --vert: #283618;
+    --green:#2B9348;
+    --white:#FEFAE0;
+    --orange:#DDA15E;
+    --coffee: #BC6C25;
+}
+
+.bg-vert{
+	background-color: var(--vert) !important;
+}
+
+.bg-green{
+	background-color: var(--green) !important;
+}
+
+.bg-white{
+	background-color: var(--white) !important;
+}
+
+.bg-orange{
+	background-color: var(--orange) !important;
+}
+
+.bg-coffee{
+	background-color: var(--coffee) !important;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(Logo.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font-family: 'Acme', sans-serif;
+}
+
+
+#wrapper{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100% !important;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+.navbar{
+    opacity: 50%;
+}
+
+section{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
+    margin: 0 auto;
+    max-width: 1440px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100% !important;
+    
+}
+
+#bloque1{
+    background-image: url(Edit2.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+#bloque2{
+    background-image: url(Edit6.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#bloque3{
+    background-image: url(4.png);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#bloque4{
+    background-image: url(Edit4.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Cuerpo sección 1*/
+
+.color{
+    background-color: rgba(96, 108, 56, .5);
+    width: 450px;
+    height: 450px;
+    max-width: 100%;
+    position:fixed;
+    align-items: center;
+    animation-duration: 3s;
+  animation-name: slideout;
+}
+
+@keyframes slideout {
+  from {
+    margin-left: -100%;
+    width: -300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 450px;
+  }
+
+}
+
+.center-h {
+  justify-content: center;
+}
+.center-v {
+  align-items: center;
+}
+
+.img{
+    background-image: url(logo0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    width: 450px;
+    height: 450px;
+    position:fixed;
+    align-items: start;
+    animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: -300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 450px;
+  }
+
+}
+.mt-5 {
+  margin-top: 100px !important;
+}
+.mt-6 {
+  margin-top: 150px !important;
+}
+
+/* Cuerpo sección 2*/
+
+.ima{
+     background-image: url(Edit3.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 450px;
+    width: 550px;
+    position: relative;
+    align-items: center;
+}
+.mt-4{
+   margin-top: 150px !important; 
+}
+.ml-5{
+    margin-left: 80px !important;
+}
+.mt-1{
+    margin-top: -250px !important; 
+    margin-left: 350px !important;
+}
+.txt{
+    background-color: rgba(221, 161, 94, 0.5);
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
+}
+/* Cuerpo sección 3 */
+.row div[class*='col'] { 
+    padding: 10px; 
+    text-align: center; 
+}
+.miniatura{
+z-index: 1000;
+text-decoration: none;
+}
+.miniatura img {
+border: 0px;
+}
+.miniatura span {
+position: absolute;
+text-decoration: none;
+visibility: hidden;
+border: 0px;
+top:0px;
+left:420px;
+}
+.miniatura:hover span {
+visibility: visible;
+overflow:visible;
+z-index: 1000;
+}
+.mt-2{
+   margin-top: -100px !important; 
+}
+.Marquee {
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 7s linear;
+}
+
+@-webkit-keyframes rightThenLeft {
+    -50%   {left: 50%;}
+    50%  {left: 100%;}
+    100% {left: 0%;}
+}
+.Marq {
+    white-space: nowrap;
+    -webkit-animation: rightThenRight 7s linear;
+}
+
+@-webkit-keyframes rightThenRight {
+    -50%   {right: 50%;}
+    50%  {right: 100%;}
+    100% {right: 0%;}
+}
+#capa1, #mensaje1{
+    padding: 10px; 
+    
+}
+
+#mensaje1{
+    display: none;
+    background-color: var(--green);
+}
+#capa2, #mensaje2{
+    padding: 10px; 
+    
+}
+
+#mensaje2{
+    display: none;
+    background-color: var(--green);
+}
+#capa3, #mensaje3{
+    padding: 10px; 
+    
+}
+
+#mensaje3{
+    display: none;
+    background-color: var(--green);
+}
+
+/*Cuerpo sección 4*/
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    }
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+/*Cuerpo seccion 5*/
+
+#bloque5{
+    background-image: url(fondo.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+#wrapper2{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100% !important;
+}
+.mt-3{
+    margin-top: 250px !important; 
+    margin-left: 250px !important; 
+}
+.couleur{
+    background-color: rgba(0, 127, 95,0.6);
+}
+
+/*Formulario*/
+.couleur1{
+    background-color: rgba(85, 166, 48,0.5);
+}
+
+/*Footer */
+#wrapper2{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100% !important;
+}
+.sec{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    margin: 0 auto;
+    max-width: 1440px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100% !important;
+    
+}
+#bloque6{
+    background-image: url(Edit4.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
