@@ -158,7 +158,6 @@ section{
 }
 
 /* Cuerpo sección 2*/
-
 .ima{
      background-image: url(Edit3.jpg);
     background-size: cover;
@@ -300,9 +299,11 @@ z-index: 1000;
 .couleur1{
     background-color: rgba(85, 166, 48,0.5);
 }
-
+.pl-5{
+    margin-left: 100px !important; 
+}
 /*Footer */
-#wrapper2{
+#wrap2{
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
     margin: 0 auto;
     max-width: 1440px;
